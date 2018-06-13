@@ -46,7 +46,7 @@ This project will be executed as a group.  To make your team as effective and ef
 
 **Note:** As you know, EDA is the single most important part of data science. This is where you should be spending most of your time. Knowing your data, and understanding the status of its integrity, is what makes or breaks a project.
 
-Modeling
+# Modeling
 
 While many of the best Kaggle submissions used highly engineered features (time-lagged weather statistics, polynomially-smoothed interaction terms, etc.) with excellent effects on their model scores, our time constraints prevented us from delving too deeply into feature engineering. We selected features that broadly related to temperature, moisture, and location.  We began with a broad feature set that we pruned down experimentally before settling on our final features.
 
@@ -56,7 +56,7 @@ This data posed a peculiar difficulty: we had to predict even-year data but we c
 
 After tuning, our best model was logistic regression.  Our final logistic model received an RoC-AuC score of 0.68869, and its most important features were [insert graph].  These features out-performed more broad weather and location features, vindicating our initial belief that these features were good predictors.
 
-[2014 prediction plot]
+[insert 2014 prediction plot]
 
 
 **Presentation**

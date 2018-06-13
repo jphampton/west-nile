@@ -46,11 +46,18 @@ This project will be executed as a group.  To make your team as effective and ef
 
 **Note:** As you know, EDA is the single most important part of data science. This is where you should be spending most of your time. Knowing your data, and understanding the status of its integrity, is what makes or breaks a project.
 
-**Modeling**
+Modeling
 
-1. The goal is of course to build a model and make predictions that the city of Chicago can use when it decides where to spray pesticides! Your team should have a clean Jupyter Notebook that shows your EDA process, your modeling and predictions.
-2. Conduct a cost-benefit analysis. This should include annual cost projections for various levels of pesticide coverage (cost) and the effect of these various levels of pesticide coverage (benefit). *(Hint: How would we quantify the benefit of pesticide spraying? To get "maximum benefit," what does that look like and how much does that cost? What if we cover less and therefore get a lower level of benefit?)*
-3. Your final submission CSV should be in your GitHub repo.
+While many of the best Kaggle submissions used highly engineered features (time-lagged weather statistics, polynomially-smoothed interaction terms, etc.) with excellent effects on their model scores, our time constraints prevented us from delving too deeply into feature engineering. We selected features that broadly related to temperature, moisture, and location.  We began with a broad feature set that we pruned down experimentally before settling on our final features.
+
+For model selection, we began by identifying our data science problem as binary classification, yes/no West Nile virus present.  We considered a large family of classification models from sklearn. Including logistic regression, support vector classifiers, tree-based classifiers (decision trees, random forests, extra trees), and neural networks (pure dense and convolutional).
+
+This data posed a peculiar difficulty: we had to predict even-year data but we could only train on odd-year data.  Since yearly trends in temperature and weather were idiosyncratic (some years very different than others), overfitting to these years was an early pitfall of our modeling process.  We mitigated this tendency by adapting our features to try to take year-to-year variance into account.
+
+After tuning, our best model was logistic regression.  Our final logistic model received an RoC-AuC score of 0.68869, and its most important features were [insert graph].  These features out-performed more broad weather and location features, vindicating our initial belief that these features were good predictors.
+
+[2014 prediction plot]
+
 
 **Presentation**
 * Audience: You are presenting to members of the CDC. Some members of the audience will be biostatisticians and epidemiologists who will understand your models and metrics and will want more information. Others will be decision-makers, focusing almost exclusively on your cost-benefit analysis. Your job is to convince both groups of the best course of action in the same meeting and be able to answer questions that either group may ask.

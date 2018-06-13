@@ -1,5 +1,8 @@
 # West Nile Prevention: Pesticide recommendations using predictive modeling 
 
+![alt text](https://raw.githubusercontent.com/cstreams/Project_4/master/images/coefficients.png)
+
+
 ## Introduction
 
 Chicago has a decades long history of West Nile, a virus spread to humans through infected mosquitoes. While many infected with the virus develop no symptoms, 20% develop mild symptoms such as fever and vomiting, and 0.7% develop serious symptoms that may result in death [1].  The first human cases of West Nile appeared in Chicago in 2002, with 225 cases and 22 fatalities [2]. In 2004, the City of Chicago started a surveillance and control program where mosquito traps were placed throughout the city and captured mosquitoes are tested for the virus every year from late spring to early fall [2]. The test results influence airborne pesticide usage to eradicate adult mosquitoes and prevent the spread of the virus. There is therefore value in accurately predicting West Nile outbreaks to help the city allocate resources for disease prevention.   

@@ -1,6 +1,5 @@
 # West Nile Prevention: Pesticide recommendations using predictive modeling 
 
-![alt text](https://raw.githubusercontent.com/cstreams/Project_4/master/images/coefficients.png)
 
 
 ## Introduction
@@ -17,11 +16,13 @@ While many of the best Kaggle submissions used highly engineered features (time-
 
 For model selection, we began by identifying our data science problem as binary classification, yes/no West Nile virus present.  We considered a large family of classification models from sklearn. Including logistic regression, support vector classifiers, tree-based classifiers (decision trees, random forests, extra trees), and neural networks (pure dense and convolutional).
 
-This data posed a peculiar difficulty: we had to predict even-year data but we could only train on odd-year data.  Since yearly trends in temperature and weather were idiosyncratic (some years very different than others), overfitting to these years was an early pitfall of our modeling process.  We mitigated this tendency by adapting our features to try to take year-to-year variance into account.
+This data posed a peculiar difficulty: we had to predict even-year data but we could only train on odd-year data.  Since yearly trends in temperature and weather were idiosyncratic (some years very different than others), overfitting to these years was an early pitfall of our modeling process.  We mitigated this tendency by adapting our features to try to take year-to-year variance into account.  After tuning, our best model was logistic regression.
 
-After tuning, our best model was logistic regression.  Our final logistic model received an RoC-AuC score of 0.68869, and its most important features were [insert graph].  These features out-performed more broad weather and location features, vindicating our initial belief that these features were good predictors.
+![](https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/coefficients.png)
+![](https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/roc-curve.png)
 
-[insert 2014 prediction plot]
+Our final logistic model received an RoC-AuC score of 0.68869.  These features out-performed more broad weather and location features, vindicating our initial belief that these features were good predictors.
+
 
 ## Discussion
 

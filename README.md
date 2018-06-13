@@ -26,6 +26,8 @@ Given our model’s West Nile predictions, we can recommend target areas for the
 
 Even with our predictive model, outbreaks in humans are hard to predict. The cost of West Nile in humans takes many forms, including medical costs and costs from economic loss when infected individuals are hospitalized and can’t work. From the Sacramento study described above, it was determined that for severe cases, inpatient costs average $40,000 and economic loss is estimated at $12,000 when adjusted for 2014 inflation [3].  A summary is shown in Figure X. 
 
+![test](.../master/images/Screen Shot 2018-06-13 at 4.35.35 PM.png)
+
 Given our 2014 WNV predictions, only 15 cases of severe West Nile need to be prevented in order to make the $800,000 pesticide spray cost effective. We recommend to always spray, given the high medical costs, economic impact, and unpredictability of WNV outbreaks in people. Hyper vigilance helps lower the risk of a severe West Nile outbreak. 
 
 ## Next Steps

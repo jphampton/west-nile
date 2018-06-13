@@ -9,44 +9,9 @@ Chicago has a decades long history of West Nile, a virus spread to humans throug
 
 The goals for this project were to build a machine learning model to predict the presence of West Nile in mosquitoes in traps at specified locations in the city of Chicago. In addition, we conduct a pesticide cost-benefit analysis provide further recommendations to the City to maximize desired outcomes.   
 
-## Dataset
-
-The dataset, along with description, can be found here: [https://www.kaggle.com/c/predict-west-nile-virus/](https://www.kaggle.com/c/predict-west-nile-virus/).
-
-**This is also where you will be submitting your code for evaluation**. We will be using the Kaggle Leaderboard to keep track of your score. The public leaderboard uses roughly 30% of the dataset to score an AUC (Area Under Curve) metric. [You can read more about the scoring metric here](https://www.kaggle.com/wiki/AreaUnderCurve).
-
-> If you do not already have a Kaggle account, you will need to sign up on the website.  Also note that you will be submitting a "Late Submission" on Kaggle because the official competition has ended.  You can use the leaderboard to see how your results compare against roughly 1300 other data science teams!
-
-You can submit predictions as many times as you want to Kaggle, but there is a limit of 5 submissions per day.  Be intentional with your submissions!
 
 
-#### Navigating Group Work
-
-This project will be executed as a group.  To make your team as effective and efficient as possible you should do the create a shared GitHub repo and project planning document as described in the deliverables section below.
-
-## Deliverables
-
-**GitHub Repo**
-
-1. Create a GitHub repository for the group. Each member should be added as a contributor.
-2. Retrieve the dataset and upload it into a directory named `assets`.
-3. Generate a .py or .ipynb file that imports the available data.
-
-**Project Planning**
-
-1. Define your deliverable - what is the end result?
-2. Break that deliverable up into its components, and then go further down the rabbit hole until you have actionable items. Document these using a project managment tool to track things getting done.  The tool you use is up to you; it could be Trello, a spreadsheet, GitHub issues, etc.
-3. Begin deciding priorities for each task. These are subject to change, but it's good to get an initial consensus. Order these priorities however you would like.
-4. You planning documentation (or a link to it) should be included in your GitHub repo.
-
-**EDA**
-
-1. Describe the data. What does it represent? What types are present? What does each data points' distribution look like? Discuss these questions, and your own, with your partners. Document your conclusions.
-2. What kind of cleaning is needed? Document any potential issues that will need to be resolved.
-
-**Note:** As you know, EDA is the single most important part of data science. This is where you should be spending most of your time. Knowing your data, and understanding the status of its integrity, is what makes or breaks a project.
-
-# Modeling
+## Modeling
 
 While many of the best Kaggle submissions used highly engineered features (time-lagged weather statistics, polynomially-smoothed interaction terms, etc.) with excellent effects on their model scores, our time constraints prevented us from delving too deeply into feature engineering. We selected features that broadly related to temperature, moisture, and location.  We began with a broad feature set that we pruned down experimentally before settling on our final features.
 
@@ -58,19 +23,22 @@ After tuning, our best model was logistic regression.  Our final logistic model 
 
 [insert 2014 prediction plot]
 
+## Discussion
 
-**Presentation**
-* Audience: You are presenting to members of the CDC. Some members of the audience will be biostatisticians and epidemiologists who will understand your models and metrics and will want more information. Others will be decision-makers, focusing almost exclusively on your cost-benefit analysis. Your job is to convince both groups of the best course of action in the same meeting and be able to answer questions that either group may ask.
-* The length of your presentation should be about 20 minutes (a rough guideline: 2 minute intro, 10 minutes on model, 5 minutes on cost-benefit analysis, 3 minute recommendations/conclusion).  Touch base with your local instructor... er, manager... for specific logistic requirements!
+Given our model’s West Nile predictions, we can recommend target areas for the City to spray with pesticides. For 2014, our model predicts West Nile in the red areas shown in Figure X. This map shows a 120,000-acre area that includes neighborhoods such as Lincolnwood, Old Irving Park, North Mayfair, Portage Park, and Albany Park.  The estimated spray cost for the given acreage is $800,000. This value is based on an extensive study conducted in Sacramento, CA in 2005 for similar acreage and adjusted for 2014 inflation [3]. 
 
----
+Even with our predictive model, outbreaks in humans are hard to predict. The cost of West Nile in humans takes many forms, including medical costs and costs from economic loss when infected individuals are hospitalized and can’t work. From the Sacramento study described above, it was determined that for severe cases, inpatient costs average $40,000 and economic loss is estimated at $12,000 when adjusted for 2014 inflation [3].  A summary is shown in Figure X. 
 
-**Your project is due at 10:00 AM EST/9:00 AM CST on Friday, Jun3 15.**
+Given our 2014 WNV predictions, only 15 cases of severe West Nile need to be prevented in order to make the $800,000 pesticide spray cost effective. We recommend to always spray, given the high medical costs, economic impact, and unpredictability of WNV outbreaks in people. Hyper vigilance helps lower the risk of a severe West Nile outbreak. 
 
----
+## Next Steps
 
-### Project Feedback + Evaluation
+Our likely next steps would be to improve our predictive model by considering additional features, gathering more data, and building ensemble models. We would also like to examine the efficacy of spraying pesticides against West Nile virus and build models that predict outbreaks more reliably in humans rather than in mosquitoes. 
 
-Data science is a field in which we apply data to solve real-world problems. Therefore, projects and presentations are means by which we can assess your ability to solve real-world problems in a data-driven manner.
+## References
 
-Your final assessment ("grade," if you will) will be calculated based on a [topical rubric](https://docs.google.com/spreadsheets/d/1V6OzSHPXCJEe_sVT7B1vE7sT-jqNMNo-NrmZHtafMXY/edit?usp=sharing). For each category, you will receive a score of 0-3. From the rubric you can see descriptions of each score and what is needed to attain those scores. Make sure you look at the "Rubric P4" tab of the [spreadsheet](https://docs.google.com/spreadsheets/d/1V6OzSHPXCJEe_sVT7B1vE7sT-jqNMNo-NrmZHtafMXY/edit?usp=sharing).
+[1] https://www.cdc.gov/westnile/ 
+
+[2] https://www.cityofchicago.org/city/en/depts/cdph/provdrs/healthy_communities/news/2012/jul/city_to_spray_insecticidetonightandwednesdaytokillmosquitoes.html 
+
+[3] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3322011/

@@ -1,7 +1,4 @@
-# West Nile Prevention: 
-Pesticide recommendations using predictive modeling 
-
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Kaggle Competition - Starter
+# West Nile Prevention: Pesticide recommendations using predictive modeling 
 
 ## Introduction
 
@@ -9,7 +6,7 @@ Chicago has a decades long history of West Nile, a virus spread to humans throug
 
 The goals for this project were to build a machine learning model to predict the presence of West Nile in mosquitoes in traps at specified locations in the city of Chicago. In addition, we conduct a pesticide cost-benefit analysis provide further recommendations to the City to maximize desired outcomes.   
 
-
+## Data Analysis
 
 ## Modeling
 

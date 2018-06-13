@@ -5,9 +5,9 @@ Pesticide recommendations using predictive modeling
 
 ## Introduction
 
-Welcome to your first week of work at the Disease And Treatment Agency, division of Societal Cures In Epidemiology and New Creative Engineering (DATA-SCIENCE). Time to get to work!
+Chicago has a decades long history of West Nile, a virus spread to humans through infected mosquitoes. While many infected with the virus develop no symptoms, 20% develop mild symptoms such as fever and vomiting, and 0.7% develop serious symptoms that may result in death [1].  The first human cases of West Nile appeared in Chicago in 2002, with 225 cases and 22 fatalities [2]. In 2004, the City of Chicago started a surveillance and control program where mosquito traps were placed throughout the city and captured mosquitoes are tested for the virus every year from late spring to early fall [2]. The test results influence airborne pesticide usage to eradicate adult mosquitoes and prevent the spread of the virus. There is therefore value in accurately predicting West Nile outbreaks to help the city allocate resources for disease prevention.   
 
-Due to the recent epidemic of West Nile Virus in the Windy City, we've had the Department of Public Health set up a surveillance and control system. We're hoping it will let us learn something from the mosquito population as we collect data over time. Pesticides are a necessary evil in the fight for public health and safety, not to mention expensive! We need to derive an effective plan to deploy pesticides throughout the city, and that is **exactly** where you come in!
+The goals for this project were to build a machine learning model to predict the presence of West Nile in mosquitoes in traps at specified locations in the city of Chicago. In addition, we conduct a pesticide cost-benefit analysis provide further recommendations to the City to maximize desired outcomes.   
 
 ## Dataset
 

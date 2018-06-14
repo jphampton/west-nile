@@ -18,21 +18,19 @@ For model selection, we began by identifying our data science problem as binary 
 
 This data posed a peculiar difficulty: we had to predict even-year data but we could only train on odd-year data.  Since yearly trends in temperature and weather were idiosyncratic (some years very different than others), overfitting to these years was an early pitfall of our modeling process.  We mitigated this tendency by adapting our features to try to take year-to-year variance into account.  After tuning, our best model was logistic regression.
 
-![](https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/coefficients.png)
-![](https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/roc-curve.png)
+<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/coefficients.png" width="50%" height="50%">
+<img src = "https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/roc-curve.png" width ="50%" height="50%">
 
 Our final logistic model received an RoC-AuC score of 0.68869.  These features out-performed more broad weather and location features, vindicating our initial belief that these features were good predictors.
 
 
 ## Discussion
 
-Given our model’s West Nile predictions, we can recommend target areas for the City to spray with pesticides. For 2014, our model predicts West Nile in the red areas shown in the figure below. This map shows a 120,000-acre area that includes neighborhoods such as Lincolnwood, Old Irving Park, North Mayfair, Portage Park, and Albany Park.  The estimated spray cost for the given acreage is $800,000. This value is based on an extensive study conducted in Sacramento, CA in 2005 for similar acreage and adjusted for 2014 inflation [3]. 
-
-![](https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/predictions.png)
+Given our model’s West Nile predictions, we can recommend target areas for the City to spray with pesticides. For 2014, our model predicts West Nile in the red areas shown in Figure X. This map shows a 120,000-acre area that includes neighborhoods such as Lincolnwood, Old Irving Park, North Mayfair, Portage Park, and Albany Park.  The estimated spray cost for the given acreage is $800,000. This value is based on an extensive study conducted in Sacramento, CA in 2005 for similar acreage and adjusted for 2014 inflation [3]. 
 
 Even with our predictive model, outbreaks in humans are hard to predict. The cost of West Nile in humans takes many forms, including medical costs and costs from economic loss when infected individuals are hospitalized and can’t work. From the Sacramento study described above, it was determined that for severe cases, inpatient costs average $40,000 and economic loss is estimated at $12,000 when adjusted for 2014 inflation [3].  A summary is shown in the figure below. 
 
-<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/medical.png” width=“400" height=“790”>
+<img src=https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/medical.png” width=“400" height=“790”>
 ![](https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/medical.png)
 
 Given our 2014 WNV predictions, only 15 cases of severe West Nile need to be prevented in order to make the $800,000 pesticide spray cost effective. We recommend to always spray, given the high medical costs, economic impact, and unpredictability of WNV outbreaks in people. Hyper vigilance helps lower the risk of a severe West Nile outbreak. 

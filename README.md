@@ -16,10 +16,10 @@ Visualization was used extensively to uncover trends around spraying location, t
 
 The data was found to be imbalanced with a ratio of 1:20 positives to negatives for our target variable of West Nile Virus. In order to deal with this, a combination of oversampling and undersampling were used in the form of the SMOTEENN method to reach a 1:1 ratio. With all the data thuroughly understood, it was time to develop a model to predict our target, West Nile Virus occurrence. 
 
-<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/spray-trap.png" width="50%" height="50%">
-<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/temp.png" width="50%" height="50%">
-<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/wnv-spray.png" width="50%" height="50%">
-<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/wnv-temp-precip.png" width="50%" height="50%">
+<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/spray-trap.png" width="40%" height="50%">
+<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/temp.png" width="40%" height="50%">
+<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/wnv-spray.png" width="150%" height="150%">
+<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/wnv-temp-precip.png" width="40%" height="40%">
 
 
 

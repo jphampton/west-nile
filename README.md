@@ -10,6 +10,11 @@ The goals for this project were to build a machine learning model to predict the
 
 ## Data Analysis
 
+Data was brought in from different sources that included weather, pesticide sprays, and mosquito trap information over time. Organizationally, the data was aggregated from the different sources and cleaned in order to remove issues pertaining to missing information or incorrectly logged data. In order to use all the data in our models, some text features were converted to be represented numerically. For example, this was done for the mosquito species feature.
+	Visualization was used extensively to uncover trends around spraying location, trap location and west nile outbreaks for each year. The dataset only included years that were odd(2013 for example), which meant it was not possible to determine year to year trends. Feature engineering was performed in order to calculate distances relative to the weather stations.
+	The data was found to be imbalanced with a ratio of 1:20 positives to negatives for our target variable of West Nile Virus. In order to deal with this, a combination of oversampling and undersampling were used in the form of the SMOTEENN method to reach a 1:1 ratio. With all the data thuroughly understood, it was time to develop a model to predict our target, West Nile Virus occurrence. 
+
+
 ## Modeling
 
 While many of the best Kaggle submissions used highly engineered features (time-lagged weather statistics, polynomially-smoothed interaction terms, etc.) with excellent effects on their model scores, our time constraints prevented us from delving too deeply into feature engineering. We selected features that broadly related to temperature, moisture, and location.  We began with a broad feature set that we pruned down experimentally before settling on our final features.

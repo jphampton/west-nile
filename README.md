@@ -28,7 +28,7 @@ Our final logistic model received an RoC-AuC score of 0.68869.  These features o
 
 Given our model’s West Nile predictions, we can recommend target areas for the City to spray with pesticides. For 2014, our model predicts West Nile in the red areas shown in Figure X. This map shows a 120,000-acre area that includes neighborhoods such as Lincolnwood, Old Irving Park, North Mayfair, Portage Park, and Albany Park.  The estimated spray cost for the given acreage is $800,000. This value is based on an extensive study conducted in Sacramento, CA in 2005 for similar acreage and adjusted for 2014 inflation [3].
 
-<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/predictions.png" width="50%" height="50%>
+<img src="https://git.generalassemb.ly/cstreams/Project_4/blob/master/images/predictions.png" width="50%" height="50%">
 
 Even with our predictive model, outbreaks in humans are hard to predict. The cost of West Nile in humans takes many forms, including medical costs and costs from economic loss when infected individuals are hospitalized and can’t work. From the Sacramento study described above, it was determined that for severe cases, inpatient costs average $40,000 and economic loss is estimated at $12,000 when adjusted for 2014 inflation [3].  A summary is shown in the figure below. 
 
